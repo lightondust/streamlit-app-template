@@ -29,7 +29,7 @@ class AppURL(object):
         st.experimental_set_query_params(**params)
 
     def internal_link(self, **params):
-        params_new = self.query_params
+        params_new = self.query_params.copy()
         for k, v in params.items():
             params_new[k] = v
         d_qs = urllib.parse.urlencode(params, doseq=True)

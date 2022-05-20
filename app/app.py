@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO,
                     format="%(asctime)s %(levelname)s %(message)s",
                     datefmt="%m/%d/%Y %X")
 
-st.set_page_config(layout='wide', page_title='top2vec', page_icon='./favico_s_t.png')
+st.set_page_config(layout='wide', page_title='streamlit apps template', page_icon='./favico_s_t.png')
 
 
 @st.cache(allow_output_mutation=True)
