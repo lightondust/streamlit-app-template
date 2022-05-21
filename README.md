@@ -18,6 +18,12 @@ implement a page class, write the code in a `run` method
 
 add the page class to `page_class` in `app.py`
 
+## Note
+
+Source code changes in `AppData` and `AppURL` will not reflect until restart apps.
+
+You cannot empty the field after select(only to reset to another value).
+
 ### apps make from this template
 
 - https://github.com/lightondust/token-analysis
