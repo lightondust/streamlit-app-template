@@ -11,4 +11,3 @@ class BasePage(ABC):
     @abstractmethod
     def run(self):
         pass
-
