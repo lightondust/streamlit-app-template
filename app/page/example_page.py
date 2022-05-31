@@ -7,9 +7,9 @@ class ExamplePage(BasePage):
 
     def __init__(self, app_data, **kwargs):
         super().__init__(app_data, **kwargs)
-        st.title(ExamplePage.title)
 
     def run(self):
+        st.title(ExamplePage.title)
         choice_selected = st.selectbox('choice:', [''] + ['a', 'b', 'c'])
         choice = self.app_url.sync_variable('choice', choice_selected, '')
         st.write(choice)
